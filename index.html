@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Digital Business Card - Noor Haslinda Binti Khalid, PA to CEO and Manager Administration, PKFZ">
+
+    <meta name="theme-color"
+          content="#071d35">
+
+    <title>Noor Haslinda Binti Khalid | PKFZ</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="background"></div>
+
+    <main class="container">
+
+        <!-- BUSINESS CARD -->
+        <section class="business-card">
+
+            <!-- Profile Image -->
+            <div class="profile-section">
+
+                <div class="profile-image-wrapper">
+                    <img
+                        src="profile.jpg"
+                        alt="Noor Haslinda Binti Khalid"
+                        class="profile-image">
+                </div>
+
+            </div>
+
+            <!-- Information -->
+            <div class="information">
+
+                <!-- PKFZ -->
+                <div class="company">
+                    <div class="company-logo">
+                        PKFZ
+                    </div>
+
+                    <div class="company-name">
+                        PORT KLANG FREE ZONE
+                    </div>
+
+                    <div class="country">
+                        MALAYSIA
+                    </div>
+                </div>
+
+                <!-- Name -->
+                <h1>
+                    NOOR HASLINDA<br>
+                    BINTI KHALID
+                </h1>
+
+                <div class="gold-line"></div>
+
+                <!-- Position -->
+                <h2>
+                    PA to CEO and<br>
+                    Manager Administration
+                </h2>
+
+                <p class="department">
+                    Administration
+                </p>
+
+                <!-- Contact -->
+                <div class="contact-list">
+
+                    <a
+                        href="mailto:Linda@pkfz.com"
+                        class="contact-item">
+
+                        <span class="icon">✉</span>
+
+                        <span>
+                            Linda@pkfz.com
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="tel:+60173862711"
+                        class="contact-item">
+
+                        <span class="icon">☎</span>
+
+                        <span>
+                            017-386 2711
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="tel:+60331015568"
+                        class="contact-item">
+
+                        <span class="icon">☎</span>
+
+                        <span>
+                            +603-3101 5568
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ACTION BUTTONS -->
+        <section class="actions">
+
+            <a
+                href="mailto:Linda@pkfz.com"
+                class="action-button">
+
+                <span>✉</span>
+
+                <div>
+                    <strong>Email</strong>
+                    <small>Send an email</small>
+                </div>
+
+            </a>
+
+
+            <a
+                href="tel:+60173862711"
+                class="action-button">
+
+                <span>📱</span>
+
+                <div>
+                    <strong>Mobile</strong>
+                    <small>017-386 2711</small>
+                </div>
+
+            </a>
+
+
+            <a
+                href="tel:+60331015568"
+                class="action-button">
+
+                <span>☎</span>
+
+                <div>
+                    <strong>Office</strong>
+                    <small>+603-3101 5568</small>
+                </div>
+
+            </a>
+
+
+            <button
+                onclick="downloadContact()"
+                class="action-button">
+
+                <span>👤</span>
+
+                <div>
+                    <strong>Save Contact</strong>
+                    <small>Add to phone</small>
+                </div>
+
+            </button>
+
+        </section>
+
+
+        <!-- NFC -->
+        <section class="nfc-card">
+
+            <div class="nfc-icon">
+                📱
+            </div>
+
+            <h2>
+                TAP TO CONNECT
+            </h2>
+
+            <p>
+                Tap your NFC-enabled device to connect
+                and save this contact.
+            </p>
+
+            <button
+                class="nfc-button"
+                onclick="shareContact()">
+
+                TAP / SHARE CONTACT
+
+            </button>
+
+        </section>
+
+
+        <!-- COMPANY -->
+        <section class="company-information">
+
+            <div class="pkfz-title">
+                PKFZ
+            </div>
+
+            <p>
+                PORT KLANG FREE ZONE
+            </p>
+
+            <p>
+                Gateway to Greater Possibilities
+            </p>
+
+            <a
+                href="https://www.pkfz.com"
+                target="_blank"
+                rel="noopener">
+
+                www.pkfz.com
+
+            </a>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer>
+
+            <p>
+                © <span id="year"></span>
+                Port Klang Free Zone
+            </p>
+
+            <p>
+                Digital Business Card
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
