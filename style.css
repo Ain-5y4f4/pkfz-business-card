@@ -1,0 +1,741 @@
+/* ================================
+   GENERAL
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    min-height: 100vh;
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            135deg,
+            #041426,
+            #092743,
+            #071d35
+        );
+
+    overflow-x: hidden;
+}
+
+
+/* ================================
+   BACKGROUND
+================================ */
+
+.background {
+    position: fixed;
+
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+
+    pointer-events: none;
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(212, 167, 67, 0.15),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 80% 80%,
+            rgba(255, 255, 255, 0.08),
+            transparent 30%
+        );
+
+    z-index: -1;
+}
+
+
+/* ================================
+   CONTAINER
+================================ */
+
+.container {
+
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 40px 20px;
+}
+
+
+/* ================================
+   BUSINESS CARD
+================================ */
+
+.business-card {
+
+    display: grid;
+
+    grid-template-columns:
+        40% 60%;
+
+    min-height: 520px;
+
+    background: #ffffff;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 30px 70px
+        rgba(0, 0, 0, 0.45);
+
+    color: #071d35;
+
+    position: relative;
+}
+
+
+/* ================================
+   PROFILE
+================================ */
+
+.profile-section {
+
+    background:
+        linear-gradient(
+            135deg,
+            #061a30,
+            #0d3154
+        );
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px;
+
+    position: relative;
+}
+
+
+.profile-section::after {
+
+    content: "";
+
+    position: absolute;
+
+    right: -70px;
+
+    top: 0;
+
+    width: 130px;
+
+    height: 100%;
+
+    background: #d4a743;
+
+    transform: skewX(-10deg);
+
+    opacity: 0.9;
+}
+
+
+.profile-image-wrapper {
+
+    width: 310px;
+
+    height: 390px;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    border: 5px solid #d4a743;
+
+    position: relative;
+
+    z-index: 2;
+
+    box-shadow:
+        0 20px 50px
+        rgba(0, 0, 0, 0.4);
+}
+
+
+.profile-image {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* ================================
+   INFORMATION
+================================ */
+
+.information {
+
+    padding: 45px 50px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    position: relative;
+
+    z-index: 3;
+}
+
+
+/* ================================
+   COMPANY
+================================ */
+
+.company {
+
+    margin-bottom: 25px;
+}
+
+
+.company-logo {
+
+    font-size: 48px;
+
+    font-weight: 900;
+
+    letter-spacing: -3px;
+
+    color: #0a2948;
+}
+
+
+.company-name {
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    color: #1b3550;
+}
+
+
+.country {
+
+    font-size: 10px;
+
+    letter-spacing: 5px;
+
+    margin-top: 4px;
+
+    color: #777;
+}
+
+
+/* ================================
+   NAME
+================================ */
+
+h1 {
+
+    font-size: 38px;
+
+    line-height: 1.1;
+
+    letter-spacing: 1px;
+
+    color: #071d35;
+
+    margin-bottom: 15px;
+}
+
+
+.gold-line {
+
+    width: 100px;
+
+    height: 4px;
+
+    background: #d4a743;
+
+    margin-bottom: 20px;
+}
+
+
+/* ================================
+   POSITION
+================================ */
+
+.information h2 {
+
+    font-size: 22px;
+
+    line-height: 1.35;
+
+    font-weight: 600;
+
+    color: #173451;
+}
+
+
+.department {
+
+    font-size: 16px;
+
+    margin-top: 8px;
+
+    color: #777;
+}
+
+
+/* ================================
+   CONTACT
+================================ */
+
+.contact-list {
+
+    margin-top: 25px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 13px;
+}
+
+
+.contact-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    text-decoration: none;
+
+    color: #172f49;
+
+    font-size: 17px;
+
+    transition: 0.25s;
+}
+
+
+.contact-item:hover {
+
+    color: #b38725;
+
+    transform: translateX(5px);
+}
+
+
+.icon {
+
+    width: 40px;
+
+    height: 40px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #092743;
+
+    color: #ffffff;
+
+    font-size: 18px;
+}
+
+
+/* ================================
+   ACTION BUTTONS
+================================ */
+
+.actions {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+
+.action-button {
+
+    border: none;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    background: rgba(
+        255,
+        255,
+        255,
+        0.97
+    );
+
+    color: #071d35;
+
+    border-radius: 15px;
+
+    padding: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    box-shadow:
+        0 10px 30px
+        rgba(0, 0, 0, 0.2);
+
+    transition:
+        transform 0.25s,
+        box-shadow 0.25s;
+}
+
+
+.action-button:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px
+        rgba(0, 0, 0, 0.3);
+}
+
+
+.action-button > span {
+
+    font-size: 24px;
+}
+
+
+.action-button strong {
+
+    display: block;
+
+    font-size: 15px;
+}
+
+
+.action-button small {
+
+    display: block;
+
+    color: #777;
+
+    margin-top: 4px;
+}
+
+
+/* ================================
+   NFC
+================================ */
+
+.nfc-card {
+
+    margin-top: 25px;
+
+    padding: 35px;
+
+    border-radius: 22px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #071d35,
+            #0d3154
+        );
+
+    border: 1px solid
+        rgba(
+            212,
+            167,
+            67,
+            0.5
+        );
+
+    box-shadow:
+        0 20px 50px
+        rgba(0, 0, 0, 0.3);
+}
+
+
+.nfc-icon {
+
+    font-size: 50px;
+
+    margin-bottom: 10px;
+}
+
+
+.nfc-card h2 {
+
+    color: #d4a743;
+
+    letter-spacing: 4px;
+
+    font-size: 24px;
+}
+
+
+.nfc-card p {
+
+    margin: 12px auto 20px;
+
+    max-width: 500px;
+
+    color: #d8e0e8;
+
+    line-height: 1.6;
+}
+
+
+.nfc-button {
+
+    border: 2px solid #d4a743;
+
+    background: transparent;
+
+    color: #ffffff;
+
+    padding: 13px 25px;
+
+    border-radius: 50px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+
+.nfc-button:hover {
+
+    background: #d4a743;
+
+    color: #071d35;
+}
+
+
+/* ================================
+   COMPANY INFORMATION
+================================ */
+
+.company-information {
+
+    text-align: center;
+
+    padding: 40px 20px 20px;
+}
+
+
+.pkfz-title {
+
+    font-size: 50px;
+
+    font-weight: 900;
+
+    letter-spacing: -3px;
+}
+
+
+.company-information p {
+
+    margin-top: 5px;
+
+    color: #d4a743;
+
+    letter-spacing: 3px;
+
+    font-size: 12px;
+}
+
+
+.company-information a {
+
+    display: inline-block;
+
+    margin-top: 15px;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+.company-information a:hover {
+
+    color: #d4a743;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+
+    text-align: center;
+
+    padding-top: 20px;
+
+    color: #9eabb8;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 800px) {
+
+    .container {
+
+        padding:
+            20px 12px;
+    }
+
+
+    .business-card {
+
+        grid-template-columns: 1fr;
+
+        min-height: auto;
+    }
+
+
+    .profile-section {
+
+        padding: 30px;
+
+        min-height: 400px;
+    }
+
+
+    .profile-section::after {
+
+        display: none;
+    }
+
+
+    .profile-image-wrapper {
+
+        width: 260px;
+
+        height: 330px;
+    }
+
+
+    .information {
+
+        padding: 35px 25px;
+    }
+
+
+    h1 {
+
+        font-size: 30px;
+    }
+
+
+    .information h2 {
+
+        font-size: 19px;
+    }
+
+
+    .contact-item {
+
+        font-size: 15px;
+    }
+
+
+    .actions {
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .actions {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .profile-image-wrapper {
+
+        width: 220px;
+
+        height: 280px;
+    }
+
+
+    .information {
+
+        padding: 30px 20px;
+    }
+
+
+    h1 {
+
+        font-size: 27px;
+    }
+
+
+    .company-logo {
+
+        font-size: 40px;
+    }
+
+}
