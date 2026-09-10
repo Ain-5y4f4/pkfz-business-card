@@ -1,15 +1,24 @@
-/* ================================
-   GENERAL
-================================ */
+/* =========================================
+   RESET
+========================================= */
 
 * {
+
     margin: 0;
+
     padding: 0;
+
     box-sizing: border-box;
+
 }
 
 
+/* =========================================
+   BODY
+========================================= */
+
 body {
+
     font-family:
         Arial,
         Helvetica,
@@ -17,9 +26,10 @@ body {
 
     min-height: 100vh;
 
-    color: #ffffff;
+    color: white;
 
     background:
+
         linear-gradient(
             135deg,
             #041426,
@@ -28,44 +38,50 @@ body {
         );
 
     overflow-x: hidden;
+
 }
 
 
-/* ================================
-   BACKGROUND
-================================ */
+/* =========================================
+   BACKGROUND EFFECT
+========================================= */
 
 .background {
+
     position: fixed;
 
-    width: 100%;
-    height: 100%;
-
     top: 0;
+
     left: 0;
+
+    width: 100%;
+
+    height: 100%;
 
     pointer-events: none;
 
     background:
+
         radial-gradient(
-            circle at 20% 20%,
-            rgba(212, 167, 67, 0.15),
+            circle at 10% 10%,
+            rgba(212,167,67,0.15),
             transparent 30%
         ),
 
         radial-gradient(
-            circle at 80% 80%,
-            rgba(255, 255, 255, 0.08),
+            circle at 90% 90%,
+            rgba(255,255,255,0.08),
             transparent 30%
         );
 
     z-index: -1;
+
 }
 
 
-/* ================================
-   CONTAINER
-================================ */
+/* =========================================
+   MAIN CONTAINER
+========================================= */
 
 .container {
 
@@ -76,12 +92,13 @@ body {
     margin: auto;
 
     padding: 40px 20px;
+
 }
 
 
-/* ================================
+/* =========================================
    BUSINESS CARD
-================================ */
+========================================= */
 
 .business-card {
 
@@ -92,29 +109,32 @@ body {
 
     min-height: 520px;
 
-    background: #ffffff;
+    background: white;
+
+    color: #071d35;
 
     border-radius: 25px;
 
     overflow: hidden;
 
-    box-shadow:
-        0 30px 70px
-        rgba(0, 0, 0, 0.45);
-
-    color: #071d35;
-
     position: relative;
+
+    box-shadow:
+
+        0 30px 70px
+        rgba(0,0,0,0.45);
+
 }
 
 
-/* ================================
-   PROFILE
-================================ */
+/* =========================================
+   PHOTO SECTION
+========================================= */
 
-.profile-section {
+.photo-section {
 
     background:
+
         linear-gradient(
             135deg,
             #061a30,
@@ -123,41 +143,49 @@ body {
 
     display: flex;
 
-    align-items: center;
-
     justify-content: center;
 
-    padding: 30px;
+    align-items: center;
+
+    padding: 35px;
 
     position: relative;
+
 }
 
 
-.profile-section::after {
+/* =========================================
+   GOLD CURVE
+========================================= */
 
-    content: "";
+.gold-curve {
 
     position: absolute;
 
-    right: -70px;
+    right: -60px;
 
-    top: 0;
+    top: -20px;
 
-    width: 130px;
+    width: 120px;
 
-    height: 100%;
+    height: 110%;
 
     background: #d4a743;
 
     transform: skewX(-10deg);
 
-    opacity: 0.9;
+    opacity: 0.95;
+
 }
 
 
-.profile-image-wrapper {
+/* =========================================
+   PHOTO
+========================================= */
 
-    width: 310px;
+.photo-wrapper {
+
+    width: 300px;
 
     height: 390px;
 
@@ -172,12 +200,14 @@ body {
     z-index: 2;
 
     box-shadow:
+
         0 20px 50px
-        rgba(0, 0, 0, 0.4);
+        rgba(0,0,0,0.4);
+
 }
 
 
-.profile-image {
+.profile-photo {
 
     width: 100%;
 
@@ -186,12 +216,13 @@ body {
     object-fit: cover;
 
     display: block;
+
 }
 
 
-/* ================================
+/* =========================================
    INFORMATION
-================================ */
+========================================= */
 
 .information {
 
@@ -206,60 +237,37 @@ body {
     position: relative;
 
     z-index: 3;
+
 }
 
 
-/* ================================
-   COMPANY
-================================ */
+/* =========================================
+   PKFZ LOGO
+========================================= */
 
 .company {
 
     margin-bottom: 25px;
+
 }
 
 
-.company-logo {
+.pkfz-logo {
 
-    font-size: 48px;
+    width: 190px;
 
-    font-weight: 900;
+    height: auto;
 
-    letter-spacing: -3px;
+    display: block;
 
-    color: #0a2948;
 }
 
 
-.company-name {
-
-    font-size: 14px;
-
-    font-weight: bold;
-
-    letter-spacing: 3px;
-
-    color: #1b3550;
-}
-
-
-.country {
-
-    font-size: 10px;
-
-    letter-spacing: 5px;
-
-    margin-top: 4px;
-
-    color: #777;
-}
-
-
-/* ================================
+/* =========================================
    NAME
-================================ */
+========================================= */
 
-h1 {
+.information h1 {
 
     font-size: 38px;
 
@@ -270,8 +278,13 @@ h1 {
     color: #071d35;
 
     margin-bottom: 15px;
+
 }
 
+
+/* =========================================
+   GOLD LINE
+========================================= */
 
 .gold-line {
 
@@ -282,12 +295,13 @@ h1 {
     background: #d4a743;
 
     margin-bottom: 20px;
+
 }
 
 
-/* ================================
+/* =========================================
    POSITION
-================================ */
+========================================= */
 
 .information h2 {
 
@@ -298,6 +312,7 @@ h1 {
     font-weight: 600;
 
     color: #173451;
+
 }
 
 
@@ -305,25 +320,27 @@ h1 {
 
     font-size: 16px;
 
+    color: #777;
+
     margin-top: 8px;
 
-    color: #777;
 }
 
 
-/* ================================
-   CONTACT
-================================ */
+/* =========================================
+   CONTACT LIST
+========================================= */
 
 .contact-list {
-
-    margin-top: 25px;
 
     display: flex;
 
     flex-direction: column;
 
     gap: 13px;
+
+    margin-top: 25px;
+
 }
 
 
@@ -335,13 +352,14 @@ h1 {
 
     gap: 15px;
 
-    text-decoration: none;
-
     color: #172f49;
+
+    text-decoration: none;
 
     font-size: 17px;
 
     transition: 0.25s;
+
 }
 
 
@@ -350,10 +368,15 @@ h1 {
     color: #b38725;
 
     transform: translateX(5px);
+
 }
 
 
-.icon {
+/* =========================================
+   CONTACT ICON
+========================================= */
+
+.contact-icon {
 
     width: 40px;
 
@@ -363,21 +386,22 @@ h1 {
 
     display: flex;
 
-    align-items: center;
-
     justify-content: center;
+
+    align-items: center;
 
     background: #092743;
 
-    color: #ffffff;
+    color: white;
 
     font-size: 18px;
+
 }
 
 
-/* ================================
+/* =========================================
    ACTION BUTTONS
-================================ */
+========================================= */
 
 .actions {
 
@@ -389,6 +413,7 @@ h1 {
     gap: 15px;
 
     margin-top: 25px;
+
 }
 
 
@@ -400,12 +425,7 @@ h1 {
 
     cursor: pointer;
 
-    background: rgba(
-        255,
-        255,
-        255,
-        0.97
-    );
+    background: white;
 
     color: #071d35;
 
@@ -420,123 +440,212 @@ h1 {
     gap: 13px;
 
     box-shadow:
-        0 10px 30px
-        rgba(0, 0, 0, 0.2);
 
-    transition:
-        transform 0.25s,
-        box-shadow 0.25s;
+        0 10px 30px
+        rgba(0,0,0,0.2);
+
+    transition: 0.25s;
+
+    font-family: inherit;
+
 }
 
 
 .action-button:hover {
 
-    transform: translateY(-5px);
+    transform:
+        translateY(-5px);
 
     box-shadow:
+
         0 15px 35px
-        rgba(0, 0, 0, 0.3);
+        rgba(0,0,0,0.3);
+
 }
 
 
-.action-button > span {
+/* =========================================
+   ACTION ICON
+========================================= */
 
-    font-size: 24px;
+.action-icon {
+
+    width: 45px;
+
+    height: 45px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #071d35;
+
+    color: white;
+
+    font-size: 21px;
+
+    flex-shrink: 0;
+
 }
 
 
-.action-button strong {
+/* =========================================
+   ACTION TEXT
+========================================= */
+
+.action-text {
+
+    text-align: left;
+
+}
+
+
+.action-text strong {
 
     display: block;
 
     font-size: 15px;
+
 }
 
 
-.action-button small {
+.action-text small {
 
     display: block;
 
     color: #777;
 
     margin-top: 4px;
+
 }
 
 
-/* ================================
-   NFC
-================================ */
+/* =========================================
+   NFC SECTION
+========================================= */
 
-.nfc-card {
+.nfc-section {
 
     margin-top: 25px;
 
-    padding: 35px;
-
-    border-radius: 22px;
+    padding: 40px 25px;
 
     text-align: center;
 
+    border-radius: 22px;
+
     background:
+
         linear-gradient(
             135deg,
             #071d35,
             #0d3154
         );
 
-    border: 1px solid
-        rgba(
-            212,
-            167,
-            67,
-            0.5
-        );
+    border:
+
+        1px solid
+        rgba(212,167,67,0.5);
 
     box-shadow:
+
         0 20px 50px
-        rgba(0, 0, 0, 0.3);
+        rgba(0,0,0,0.3);
+
 }
 
 
-.nfc-icon {
+/* =========================================
+   NFC SYMBOL
+========================================= */
+
+.nfc-symbol {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.nfc-phone {
 
     font-size: 50px;
 
-    margin-bottom: 10px;
 }
 
 
-.nfc-card h2 {
+.nfc-waves {
+
+    color: #d4a743;
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    letter-spacing: -8px;
+
+}
+
+
+/* =========================================
+   NFC TITLE
+========================================= */
+
+.nfc-section h2 {
 
     color: #d4a743;
 
     letter-spacing: 4px;
 
     font-size: 24px;
+
 }
 
 
-.nfc-card p {
+.nfc-section p {
 
-    margin: 12px auto 20px;
+    max-width: 550px;
 
-    max-width: 500px;
+    margin:
+
+        12px auto 22px;
+
+    line-height: 1.6;
 
     color: #d8e0e8;
 
-    line-height: 1.6;
 }
 
 
+/* =========================================
+   NFC BUTTON
+========================================= */
+
 .nfc-button {
 
-    border: 2px solid #d4a743;
+    border:
+
+        2px solid
+        #d4a743;
 
     background: transparent;
 
-    color: #ffffff;
+    color: white;
 
-    padding: 13px 25px;
+    padding:
+
+        13px 25px;
 
     border-radius: 50px;
 
@@ -547,6 +656,7 @@ h1 {
     cursor: pointer;
 
     transition: 0.25s;
+
 }
 
 
@@ -555,66 +665,78 @@ h1 {
     background: #d4a743;
 
     color: #071d35;
+
 }
 
 
-/* ================================
-   COMPANY INFORMATION
-================================ */
+/* =========================================
+   COMPANY SECTION
+========================================= */
 
-.company-information {
+.company-section {
 
     text-align: center;
 
-    padding: 40px 20px 20px;
+    padding:
+
+        40px 20px 20px;
+
 }
 
 
-.pkfz-title {
+.bottom-logo {
 
-    font-size: 50px;
+    width: 180px;
 
-    font-weight: 900;
+    max-width: 80%;
 
-    letter-spacing: -3px;
+    height: auto;
+
 }
 
 
-.company-information p {
+.tagline {
 
-    margin-top: 5px;
+    margin-top: 12px;
 
     color: #d4a743;
 
+    font-size: 12px;
+
     letter-spacing: 3px;
 
-    font-size: 12px;
+    font-weight: bold;
+
 }
 
 
-.company-information a {
+.website {
 
     display: inline-block;
 
     margin-top: 15px;
 
-    color: #ffffff;
+    color: white;
 
     text-decoration: none;
 
     font-weight: bold;
+
+    font-size: 16px;
+
 }
 
 
-.company-information a:hover {
+.website:hover {
 
     color: #d4a743;
+
 }
 
 
-/* ================================
+/* =========================================
    FOOTER
-================================ */
+========================================= */
 
 footer {
 
@@ -627,19 +749,23 @@ footer {
     font-size: 12px;
 
     line-height: 1.8;
+
 }
 
 
-/* ================================
-   MOBILE
-================================ */
+/* =========================================
+   TABLET
+========================================= */
 
 @media (max-width: 800px) {
+
 
     .container {
 
         padding:
+
             20px 12px;
+
     }
 
 
@@ -648,94 +774,158 @@ footer {
         grid-template-columns: 1fr;
 
         min-height: auto;
+
     }
 
 
-    .profile-section {
+    .photo-section {
+
+        min-height: 430px;
 
         padding: 30px;
 
-        min-height: 400px;
     }
 
 
-    .profile-section::after {
+    .gold-curve {
 
         display: none;
+
     }
 
 
-    .profile-image-wrapper {
+    .photo-wrapper {
 
         width: 260px;
 
-        height: 330px;
+        height: 340px;
+
     }
 
 
     .information {
 
-        padding: 35px 25px;
+        padding:
+
+            35px 25px;
+
     }
 
 
-    h1 {
+    .information h1 {
 
         font-size: 30px;
+
     }
 
 
     .information h2 {
 
         font-size: 19px;
+
+    }
+
+
+    .pkfz-logo {
+
+        width: 170px;
+
+    }
+
+
+    .actions {
+
+        grid-template-columns:
+
+            1fr 1fr;
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 450px) {
+
+
+    .photo-section {
+
+        min-height: 380px;
+
+    }
+
+
+    .photo-wrapper {
+
+        width: 220px;
+
+        height: 290px;
+
+    }
+
+
+    .information {
+
+        padding:
+
+            30px 20px;
+
+    }
+
+
+    .information h1 {
+
+        font-size: 27px;
+
+    }
+
+
+    .information h2 {
+
+        font-size: 18px;
+
+    }
+
+
+    .pkfz-logo {
+
+        width: 150px;
+
     }
 
 
     .contact-item {
 
         font-size: 15px;
+
     }
 
 
     .actions {
 
-        grid-template-columns: 1fr 1fr;
-    }
+        grid-template-columns:
 
-}
+            1fr;
 
-
-@media (max-width: 450px) {
-
-    .actions {
-
-        grid-template-columns: 1fr;
     }
 
 
-    .profile-image-wrapper {
-
-        width: 220px;
-
-        height: 280px;
-    }
-
-
-    .information {
+    .nfc-section {
 
         padding: 30px 20px;
+
     }
 
 
-    h1 {
+    .nfc-section h2 {
 
-        font-size: 27px;
-    }
+        font-size: 20px;
 
+        letter-spacing: 3px;
 
-    .company-logo {
-
-        font-size: 40px;
     }
 
 }
